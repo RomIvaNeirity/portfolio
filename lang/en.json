@@ -1,0 +1,13 @@
+{
+  "site_title": "Welcome",
+  "site_description": "This is an example of a bilingual website in English.",
+  "nav_home": "Home",
+  "nav_about": "About",
+  "nav_contact": "Contacts",
+  "nav_resume": "Resume",
+  "nav_project": "Projects",
+  "hero_title": "Roman Ivashchenko.",
+  "hero_text": "Hello, my name is",
+  "hero_paragraf": "I'm a student FullStack online school GOIT, but have some projects in my portfolio."
+  
+}

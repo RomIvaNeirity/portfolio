@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="site_title">Ласкаво просимо</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="header container">
+      <nav>
+        <ul class="header-nav-list">
+          <li class="header-nav-list-item">
+            <a href="#" data-i18n="nav_home">Головна</a>
+          </li>
+          <li class="header-nav-list-item">
+            <a href="#" data-i18n="nav_about">Про мене</a>
+          </li>
+          <li class="header-nav-list-item">
+            <a href="#" data-i18n="nav_project">Проекти</a>
+          </li>
+          <li class="header-nav-list-item">
+            <a href="#" data-i18n="nav_contact">Контакти</a>
+          </li>
+          <li class="header-nav-list-item">
+            <a href="#" data-i18n="nav_resume">Резюме</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="controls">
+        <button id="lang-uk">🇺🇦 UA</button>
+        <button id="lang-en">🇬🇧 EN</button>
+        <button id="theme-toggle" data-i18n="theme-toggle-btn">🌞 / 🌙</button>
+      </div>
+    </header>
+    <main>
+      <section class="hero-section container">
+        <p data-i18n="hero_text" class="hero-intro">Привіт, моє ім'я</p>
+        <h1 data-i18n="hero_title" class="hero-title">Роман Іващенко</h1>
+        <p data-i18n="hero_paragraf" class="hero-paragraf">
+          Я студент курсу FullStack онлайн школи GOIT, але вже маю невелике
+          портфоліо проектів
+        </p>
+        <span class="hero-scroll-singt">SCROLL</span>
+        <button class="contact-btn" data-i18n="nav_contact">Контакти</button>
+      </section>
+      <section></section>
+    </main>
+    <footer class="footer container">
+      <div class="footer-social-links-container">
+        <svg class="footer-social-icon">
+          <use href="./images/icons.svg#icon-github"></use>
+        </svg>
+        <svg class="footer-social-icon">
+          <use href="./images/icons.svg#icon-email"></use>
+        </svg>
+        <svg class="footer-social-icon">
+          <use href="./images/icons.svg#icon-linkedin"></use>
+        </svg>
+        <svg class="footer-social-icon">
+          <use href="./images/icons.svg#icon-telegram"></use>
+        </svg>
+      </div>
+
+      <p data-i18n="">
+       &#169 neirity@gmail.com
+      </p>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
