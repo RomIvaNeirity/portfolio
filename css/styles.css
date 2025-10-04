@@ -51,21 +51,13 @@ p {
   --header-color: #fff;
 }
 
-/* Загальні стилі, що використовують змінні */
 body {
-  display: flexbox;
+  position: relative;
   flex-direction: column;
   background-color: var(--bg-color);
   color: var(--text-color);
   font-family: var(--font-main);
   transition: background-color 0.3s, color 0.3s;
-  min-height: 100vh;
-}
-
-main {
-  flex: 1; /* займати всю доступну середину */
-  overflow-y: auto; /* щоб ця частина могла скролитись */
-  height: 100%;
 }
 
 .container {
@@ -74,6 +66,10 @@ main {
   padding-right: 16px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.section {
+  height: 80vh;
 }
 
 a {
@@ -98,6 +94,8 @@ header {
   flex-direction: column;
   padding-top: 12px;
   padding-bottom: 12px;
+  z-index: 10;
+  height: 8vh;
 }
 
 .controls {
@@ -171,8 +169,11 @@ header {
 }
 
 .footer {
+  height: 15vh;
+  position: relative;
   padding-top: 12px;
   padding-bottom: 12px;
+  z-index: 100;
 }
 
 .footer-social-links-container {

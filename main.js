@@ -85,10 +85,4 @@ themeToggleBtn.addEventListener("click", () => {
 // Ініціалізація теми при завантаженні
 initTheme();
 
-// main.js
-import { initFullPage } from './js/fullpage-init.js';
-
-document.addEventListener('DOMContentLoaded', () => {
-  initFullPage();
-});
-
+ AOS.init()

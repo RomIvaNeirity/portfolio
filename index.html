@@ -7,7 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css" />
+
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -37,23 +39,25 @@
         <button id="theme-toggle" data-i18n="theme-toggle-btn">🌞 / 🌙</button>
       </div>
     </header>
-    <main id="fullpage">
-      <section class="hero-section container section">
-        <p data-i18n="hero_text" class="hero-intro">Привіт, моє ім'я</p>
-        <h1 data-i18n="hero_title" class="hero-title">Роман Іващенко</h1>
-        <p data-i18n="hero_paragraf" class="hero-paragraf">
-          Я студент курсу FullStack онлайн школи GOIT, але вже маю невелике
-          портфоліо проектів
-        </p>
-        <span class="hero-scroll-singt">SCROLL</span>
-        <button class="contact-btn" data-i18n="nav_contact">Контакти</button>
-      </section>
-      <section class="section">
-        <h2>About me</h2>
-        <p>Hello! My name is Damaris and I’m currently learning design skills to apply them through app/web development. Creative expression is what lights me up, and I'm always open to learning about new opportunities.</p>
-      </section>
+    <main>
+      
+          <section class="hero-section container section" >
+            <p data-i18n="hero_text" class="hero-intro">Привіт, моє ім'я</p>
+            <h1 data-scroll data-i18n="hero_title" class="hero-title">Роман Іващенко</h1>
+            <p data-i18n="hero_paragraf" class="hero-paragraf">
+              Я студент курсу FullStack онлайн школи GOIT, але вже маю невелике
+              портфоліо проектів
+            </p>
+            <span class="hero-scroll-singt">SCROLL</span>
+            <button class="contact-btn" data-i18n="nav_contact">Контакти</button>
+          </section>
+          <section class="section" data-aos="fade-up">
+            <h2>About me</h2>
+            <p>Hello! My name is Damaris and I’m currently learning design skills to apply them through app/web development. Creative expression is what lights me up, and I'm always open to learning about new opportunities.</p>
+          </section>
+      
     </main>
-    <footer class="footer container">
+    <footer class="footer container" data-aos="fade-up" >
       <div class="footer-social-links-container">
         <svg class="footer-social-icon">
           <use href="./images/icons.svg#icon-github"></use>
@@ -66,15 +70,13 @@
         </svg>
         <svg class="footer-social-icon">
           <use href="./images/icons.svg#icon-telegram"></use>
-        </svg>
-      </div>
+        </svg></div>
 
       <p data-i18n="">
        &#169 neirity@gmail.com
       </p>
     </footer>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script type="module" src="./main.js"></script>
   </body>
 </html>
