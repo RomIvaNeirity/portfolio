@@ -85,4 +85,5 @@ themeToggleBtn.addEventListener("click", () => {
 // Ініціалізація теми при завантаженні
 initTheme();
 
- AOS.init()
+ AOS.init({offset: 220, // offset (in px) from the original trigger point
+  delay: 0, })
