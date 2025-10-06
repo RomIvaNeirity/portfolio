@@ -85,5 +85,41 @@ themeToggleBtn.addEventListener("click", () => {
 // Ініціалізація теми при завантаженні
 initTheme();
 
- AOS.init({offset: 220, // offset (in px) from the original trigger point
-  delay: 0, })
+ AOS.init({offset: 280, // offset (in px) from the original trigger point
+     delay: 0,
+     duration: 1000,
+     easing: 'ease-in-out'
+ })
+ 
+
+const listItems = document.querySelectorAll('.projects-list .projects-list-item');
+  const rectangleTexts = document.querySelectorAll('.decor-rectangle-1 p');
+
+ 
+  listItems.forEach((item, index) => {
+  item.addEventListener('mouseenter', () => {
+    rectangleTexts.forEach(p => p.classList.remove('active', 'aos-animate'));
+    if (rectangleTexts[index]) {
+      const textEl = rectangleTexts[index];
+      textEl.classList.add('active');
+      // перезапускаємо анімацію AOS вручну
+      setTimeout(() => {
+        textEl.classList.add('aos-animate');
+      }, 10);
+    }
+  });
+});
+document.addEventListener('click', (e) => {
+  const listContainer = document.querySelector('.projects-list');
+  const rectContainer = document.querySelector('.decor-rectangle-1');
+
+  const clickedInsideList = listContainer.contains(e.target);
+  const clickedInsideRectangle = rectContainer.contains(e.target);
+
+  // Якщо клік не по списку і не по прямокутнику → ховаємо тексти
+  if (!clickedInsideList && !clickedInsideRectangle) {
+    rectangleTexts.forEach(p => {
+      p.classList.remove('active', 'aos-animate');
+    });
+  }
+});
