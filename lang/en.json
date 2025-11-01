@@ -8,6 +8,18 @@
   "nav_project": "Projects",
   "hero_title": "Roman Ivashchenko.",
   "hero_text": "Hello, my name is",
-  "hero_paragraf": "I'm a student FullStack online school GOIT, but have some projects in my portfolio."
-  
+  "hero_paragraf": "I'm a student FullStack online school GOIT, but have some projects in my portfolio.",
+  "about_title": "About me",
+  "about_text": "Welcome to my portfolio site! My name is Roman, and I'm currently learning developer skills to apply them to app/website development. Creative expression is what inspires me, and I'm always open to new opportunities.",
+  "about_text-tools": "Here are a few tools I’ve been working with recently:",
+  "projects_title": "Some of my projects:",
+  "projects_ekotote_dscrpt": "Light aversome site - handbag sales landing page (frontend only). First student team project (team role - team lead). HTML/CSS, Flexbox, adaptive.",
+"projects_booksy_dscrpt": "The site is dedicated to books. Second student team project (team role - team lead). HTML/CSS & JavaScript, adaptive, API, bundler Vite, libraries.",
+"projects_searchrello_dscrpt": "Аpplication for searching images by keywords. Free photos from Pixabay. JavaScript, API, bundler Vite.",
+"projects_webstudio_dscrpt": "Individual project of the HTML/CSS module of the Fullstack course. Landing page for a web studio. Mobile-first approach, adaptive, image optimization (including Retina).",
+"projects_notary_dscrpt": "Multi-page website of a private notary. Individual project, was started in 2011. Clear HTML/CSS & JavaScript, Flexbox, CEO.",
+"projects_smartorange_dscrpt": "Test task for the employer. landing page of a construction company. HTML/CSS, JavaScript libraries, API.",
+"projects_select_pur": "Move cursor to item above",
+"progect_link": "Visit Site."
+
 }
