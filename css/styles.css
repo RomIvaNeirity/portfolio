@@ -40,6 +40,7 @@ p {
   --link-color: #0077ff;
   --font-main: "Open Sans", sans-serif;
   --font-accent: "Playfair Display", sans-serif;
+  --border-color: #0e1f39;
 }
 
 /* Темна тема */
@@ -49,6 +50,7 @@ p {
   --text-color: #b0b5bc;
   --link-color: #5da9ff;
   --header-color: #fff;
+  --border-color: #fff9f3;
 }
 
 body {
@@ -186,6 +188,7 @@ header {
   margin-bottom: 12px;
 }
 
+.contacts-item-icon,
 .footer-social-icon {
   width: 28px;
   height: 28px;
@@ -195,7 +198,7 @@ header {
 .about-section {
   padding-top: 12px;
   padding-bottom: 24px;
-  height: 90vh;
+  height: auto;
 }
 
 .section-header {
@@ -205,7 +208,8 @@ header {
 }
 
 .section-about-main-container,
-.section-project-main-container {
+.section-project-main-container,
+.section-contacts-main-container {
   padding: 12px 0;
   position: relative;
   border-top: 1px solid #ff31ad;
@@ -244,8 +248,7 @@ header {
 }
 
 .project-section {
-  overflow: hidden;
-  height: 90vh;
+  height: 100vh;
 }
 
 .projects-list {
@@ -281,7 +284,7 @@ header {
   position: absolute;
   left: 50%;
   top: 20%;
-  border: 1px solid #fff;
+  border: 1px solid var(--border-color);
   width: 130px;
   height: 230px;
 }
@@ -290,7 +293,7 @@ header {
   padding: 0 12px;
   display: flex;
   position: absolute;
-  top: 60%;
+
   left: 20%;
   border: 1px solid #ff31ad;
   width: 180px;
@@ -313,4 +316,32 @@ header {
   flex-direction: column;
   gap: 12px;
   /* показуємо тільки активний */
+}
+
+.contacts-section {
+  height: 110vh;
+}
+
+.contacts-list {
+  display: flex;
+  margin-top: 24px;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contacts-messangers-list {
+  display: flex;
+  margin-top: 12px;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contacts-item-link {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.contacts-list p {
+  margin-bottom: 12px;
 }
