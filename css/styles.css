@@ -71,7 +71,6 @@ body {
 }
 
 .section {
-  height: 80vh;
 }
 
 a {
@@ -122,6 +121,7 @@ header {
 }
 
 .hero-section {
+  height: 80vh;
   position: relative;
   padding-top: 24px;
   padding-bottom: 12px;
@@ -198,7 +198,6 @@ header {
 .about-section {
   padding-top: 12px;
   padding-bottom: 24px;
-  height: 110vh;
 }
 
 .section-header {
@@ -293,7 +292,7 @@ header {
   padding: 0 12px;
   display: flex;
   position: absolute;
-  bottom: 20%;
+  bottom: 30%;
   left: 20%;
   border: 1px solid #ff31ad;
   width: 180px;
